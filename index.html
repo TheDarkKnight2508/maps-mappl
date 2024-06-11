@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Default Map</title>
+    <meta name="viewport" content="initial-scale=1.0">
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/styles.css') }}">
+    <script src="https://apis.mappls.com/advancedmaps/api/{{ api_token }}/map_sdk?layer=vector&v=3.0&callback=initMap" defer async></script>
+    <script src="{{ url_for('static', filename='js/map.js') }}" defer async></script>
+</head>
+<body>
+    <div id="map"></div>
+</body>
+</html>
