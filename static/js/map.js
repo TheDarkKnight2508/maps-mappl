@@ -10,7 +10,7 @@ function initMap() {
     // Try to get the user's current location
     if (navigator.geolocation) {
         navigator.geolocation.getCurrentPosition(function(position) {
-            var userLocation = [position.coords.longitude, position.coords.latitude];
+            var userLocation = [position.coords.latitude, position.coords.longitude];
             
             // Add a marker at the user's location
             var marker = new mappls.Marker({
@@ -20,7 +20,7 @@ function initMap() {
             });
 
             // Center the map at the user's location after adding the marker
-            map.setCenter(userLocation);
+            map.setCenter([userLocation[1],uderLocation[0]]);
 
         }, function(error) {
             console.error("Error getting user location:", error);
