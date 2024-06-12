@@ -3,7 +3,7 @@ var map;
 function initMap() {
     // Initialize the map with a default center
     map = new mappls.Map('map', {
-        center: [28.6139, 77.2090], // Default center (New Delhi)
+        center: [12.9716, 77.5946], // Default center (New Delhi)
         zoom: 10
     });
 
